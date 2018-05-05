@@ -4,7 +4,7 @@ var data = {
 };
 
 function prepCanvas() {
-  var res window.devicePixelRatio,
+  var res = window.devicePixelRatio || 1,
     scale = 1 / res;
   data.canvas = document.getElementById('dots');
   data.ctx = data.canvas.getContext('2d');
